@@ -1,0 +1,53 @@
+en:
+  PLUGIN_CONFIG:
+    PLUGIN_STATUS: Plugin status
+    PLUGIN_CSS: Use built in CSS
+    PLUGIN_JS: Use built in JavaScript
+  WEATHER_CONFIG:
+    API_KEY: Your API key
+    API_KEYDESC: Insert your API key from forecast.io
+    LATITUDE: Latitude
+    LONGITUDE: Longitude
+    WINDDIRECTION: ['N','NNE','NE','ENE','E','ESE','SE','SSE','S','SSW','SW','WSW','W','WNW','NW','NNW']
+  WIDGET_CONFIG:
+    CAPTION: Caption of widget header
+    REFRESHTIME: Weather refresh time (minutes)
+    CAPTIONDEF: Weather
+    APP_TEMP: Apparent temperature
+    HUMIDITY: Humidity
+    WIND: Wind
+    WINDSPEED: Wind speed
+    WINDBEARING: Wind bearing
+    PRESSURE: Pressure
+    SUNRISE: Sunrise
+    SUNSITE: Sunsite
+    UVINDEX: UV Index
+  DATAFROM: Data from
+
+sk:
+  PLUGIN_CONFIG:
+    PLUGIN_STATUS: Stav rozšírenia
+    PLUGIN_CSS: Použiť vnutorné štýly CSS
+    PLUGIN_JS: Použiť vnutorný JavaScript
+  WEATHER_CONFIG:
+    API_KEY: API kľúč
+    API_KEYDESC: Zadajte API kľúč z forecast.io
+    LATITUDE: Zemepisná šírka
+    LONGITUDE: Zemepisná dĺžka
+    WINDDIRECTION: ['S','SSV','SV','VSV','V','VJV','JV','JJV','J','JJZ','JZ','ZJZ','Z','ZSZ','SZ','SSZ']
+  WIDGET_CONFIG:
+    CAPTION: Nadpis hlavičky miniaplikácie
+    REFRESHTIME: Čas obnovy počasia (v minútach)
+    CAPTIONDEF: Počasie
+    APP_TEMP: Pocitová teplota
+    HUMIDITY: Vlhkosť
+    WIND: Vietor
+    WINDSPEED: Rýchlosť vetra
+    WINDBEARING: Smer vetra
+    PRESSURE: Tlak vzduchu
+    SUNRISE: Východ slnka
+    SUNSITE: Západ slnka
+    UVINDEX: UV index
+  DATAFROM: Údaje z
+
+

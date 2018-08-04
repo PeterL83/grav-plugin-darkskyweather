@@ -1,0 +1,70 @@
+name: DarkSky Weather
+version: 0.1.0
+description: Weather based on DarkSky.net (Forecast.io)
+icon: plug
+author:
+  name: Peter Ľupták
+  email: luptakinfo@gmail.com
+homepage: https://github.com/PeterL83/darkskyweather
+demo:
+keywords: grav, plugin, etc, darksky, forecast, weather
+bugs: https://github.com/PeterL83/darkskyweather/issues
+docs: https://github.com/PeterL83/darkskyweather/blob/develop/README.md
+license: MIT
+
+form:
+  validation: strict
+  fields:
+    enabled:
+      type: toggle
+      label: PLUGIN_CONFIG.PLUGIN_STATUS
+      highlight: 1
+      default: 0
+      options:
+        1: PLUGIN_ADMIN.ENABLED
+        0: PLUGIN_ADMIN.DISABLED
+      validate:
+        type: bool
+
+    built_in_css:
+      type: toggle
+      label: PLUGIN_CONFIG.PLUGIN_CSS
+      highlight: 1
+      default: 1
+      options:
+        1: PLUGIN_ADMIN.ENABLED
+        0: PLUGIN_ADMIN.DISABLED
+      validate:
+        type: bool
+
+    built_in_js:
+      type: toggle
+      label: PLUGIN_CONFIG.PLUGIN_JS
+      highlight: 1
+      default: 1
+      options:
+        1: PLUGIN_ADMIN.ENABLED
+        0: PLUGIN_ADMIN.DISABLED
+      validate:
+        type: bool
+
+    api_key:
+      type: text
+      label: WEATHER_CONFIG.API_KEY
+      help: WEATHER_CONFIG.API_KEYDESC
+
+    latitude:
+      type: text
+      label: WEATHER_CONFIG.LATITUDE
+
+    longitude:
+      type: text
+      label: WEATHER_CONFIG.LONGITUDE
+
+    caption:
+      type: text
+      label: WIDGET_CONFIG.CAPTION
+
+    refreshtime:
+      type: text
+      label: WIDGET_CONFIG.REFRESHTIME

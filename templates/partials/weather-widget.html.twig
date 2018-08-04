@@ -1,0 +1,25 @@
+{% set caption = config.get('plugins.darkskyweather.caption') %}
+<h1>{{ (caption) ? caption : "WIDGET_CONFIG.CAPTIONDEF"|t }}</h1>
+<div id="ds-box" class="widgetbox hidden">
+	<div id="ds-today">
+		<time id="ds-time" class="center" datetime="{{ 'now'|date('Y-m-d') }}">Dnes je </time>
+		<p id="ds-summary" class="bold center"></p>
+		<img id="ds-icon" data-src="{{ url('plugin://darkskyweather/assets/vclouds') }}/" src="" alt="">
+		<div id="ds-weatherinfo" class="right">
+			<p id="ds-currtemp"></p>
+			<p id="ds-apptemp">{{ "WIDGET_CONFIG.APP_TEMP"|t }}: </p>
+			<p id="ds-windspeed">{{ "WIDGET_CONFIG.WINDSPEED"|t }}: </p>
+			<p id="ds-pressure">{{ "WIDGET_CONFIG.PRESSURE"|t }}: </p>
+			<p id="ds-uvindex">{{ "WIDGET_CONFIG.UVINDEX"|t }}: </p>
+		</div>
+	</div>
+	<ul id="ds-days" class="bold center">
+		{% for i in 1..3 %}
+		<li>
+			<time id="ds-time{{ i }}"></time>
+			<img id="ds-icon{{ i }}" class="ds-icons" data-src="{{ url('plugin://darkskyweather/assets/vclouds') }}/" src="" alt="">
+			<p id="ds-temp{{ i }}"></p>
+		</li>
+		{% endfor %}
+	</ul>
+</div>

@@ -1,0 +1,38 @@
+{% do assets.addInlineJs("ifPageWeather=true;") %}
+{% extends 'partials/base.html.twig' %}
+{% block content %}
+	<h1>{{ page.title }}</h1>
+	<div id="ds-fptoday">
+		<time id="ds-fptime" datetime="{{ 'now'|date('Y-m-d') }}">Dnes je </time>
+		<p id="ds-fpsummary" class="bold"></p>
+		<img id="ds-fpicon" class="left" data-src="{{ url('plugin://darkskyweather/assets/vclouds') }}/" src="" alt="">
+		<p id="ds-fpcurrtemp"></p>
+		<div id="ds-fpweatherinfo-left" class="left">
+			<p id="ds-fpapptemp">{{ "WIDGET_CONFIG.APP_TEMP"|t }}: </p>
+			<p id="ds-fphumidity">{{ "WIDGET_CONFIG.HUMIDITY"|t }}: </p>
+			<p id="ds-fpwindspeed">{{ "WIDGET_CONFIG.WINDSPEED"|t }}: </p>
+			<p id="ds-fpwindbearing">{{ "WIDGET_CONFIG.WINDBEARING"|t }}: </p>
+		</div>
+		<div id="ds-fpweatherinfo-right" class="left">
+			<p id="ds-fppressure">{{ "WIDGET_CONFIG.PRESSURE"|t }}: </p>
+			<p id="ds-fpsunrise">{{ "WIDGET_CONFIG.SUNRISE"|t }}: </p>
+			<p id="ds-fpsunset">{{ "WIDGET_CONFIG.SUNSITE"|t }}: </p>
+			<p id="ds-fpuvindex">{{ "WIDGET_CONFIG.UVINDEX"|t }}: </p>
+		</div>
+	</div>
+	<ul id="ds-fpdays" class="center">
+		{% for i in 1..7 %}
+		<li>
+			<time id="ds-fptime{{ i }}"></time>
+			<img id="ds-fpicon{{ i }}" class="ds-fpicons" data-src="{{ url('plugin://darkskyweather/assets/vclouds') }}/" src="" alt="">
+			<p id="ds-fptemp{{ i }}" class="bold"></p>
+			<p id="ds-fphumidity{{ i }}">{{ "WIDGET_CONFIG.HUMIDITY"|t }}: </p>
+			<p id="ds-fpwind{{ i }}">{{ "WIDGET_CONFIG.WIND"|t }}: </p>
+			<p id="ds-fpsun{{ i }}"></p>
+		</li>
+		{% endfor %}
+	</ul>
+	<footer id="ds-fpfooter">
+		<a id="ds-fpforecastinfo" href="">{{ "DATAFROM"|t }} Forecast.io</a>, <a href="http://vclouds.deviantart.com/gallery/#/d2ynulp">VClouds Weather Icons©</a>
+	</footer>
+{% endblock %}

@@ -1,0 +1,119 @@
+.bold {
+	font-weight: bold;
+}
+
+.center {
+	text-align: center;
+}
+
+#ds-box {
+	min-height: 200px;
+}
+
+#ds-today,
+#ds-fptoday {
+    border-bottom: 1px solid #eaeaea;
+}
+
+#ds-fptoday {
+	height: 15em;
+}
+
+#ds-days,
+#ds-fpdays {
+    border-top: 1px solid #fff;
+    list-style: none;
+	letter-spacing: -1em;
+	line-height: 1.1em;
+}
+
+#ds-time {
+    display: block;
+}
+
+#ds-summary,
+#ds-fpsummary {
+	font-size: 1.6em;
+}
+
+#ds-fpsummary {
+    margin-left: 1em;
+}
+
+#ds-currtemp,
+#ds-fpcurrtemp {
+	font-size: 3em;
+	line-height: 1em;
+}
+#ds-fpcurrtemp {
+	position: relative;
+	left: 1em;
+}
+
+#ds-icon {
+	width: 140px;
+	height: 96px;
+	margin-left: -1em;
+}
+
+#ds-fpicon {
+	width: 200px;
+	height: 137px;
+	margin-left: 2em;
+}
+
+.ds-icons,
+.ds-fpicons {
+	width: 60px;
+	height: auto;
+	display: block;
+	padding: 0.5em 0;
+}
+
+#ds-weatherinfo {
+	padding: 5px 8px 0 0;
+	display: inline-block;
+}
+
+#ds-fpweatherinfo-left,
+#ds-fpweatherinfo-right {
+	padding: 5px 20px 0 20px;
+	display: inline-block;
+}
+
+ul#ds-fpdays {
+	padding: 0;
+}
+
+#ds-days li {
+	display: inline-block;
+	padding: 0.7em 1.3em;
+	letter-spacing: normal;
+}
+
+#ds-fpdays li {
+	display: inline-block;
+	padding: 0.7em 0.8em;
+	margin: 0.7em 0;
+	letter-spacing: normal;
+	border-right: 1px solid #eaeaea;
+	border-left: 1px solid #fff;
+	font-size: 0.8em;
+	max-width: 95px;
+}
+
+#ds-fpdays li:first-child {
+	border-left: none;
+}
+
+#ds-fpdays li:last-child {
+	border-right: none;
+}
+
+#ds-fpfooter {
+	font-size: 0.8em;
+	margin-top: 1.1em;
+    text-align: center;
+}
+
+

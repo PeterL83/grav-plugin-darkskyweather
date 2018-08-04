@@ -16,7 +16,7 @@ This will install the DarkSky Weather plugin into your `/user/plugins` directory
 
 ### Manual Installation
 
-To install this plugin, just download the zip version of this repository and unzip it under `/your/site/grav/user/plugins`. Then, rename the folder to `darkskyweather`. You can find these files on [GitHub](https://github.com/PeterL83/darkskyweather) or via [GetGrav.org](http://getgrav.org/downloads/plugins#extras).
+To install this plugin, just download the zip version of this repository and unzip it under `/your/site/grav/user/plugins`. Then, rename the folder to `darkskyweather`. You can find these files on [GitHub](https://github.com/PeterL83/grav-plugin-darkskyweather) or via [GetGrav.org](http://getgrav.org/downloads/plugins#extras).
 
 You should now have all the plugin files under
 
@@ -72,7 +72,7 @@ You can also use full page with weather for 7 days. You have to add new page usi
 
 ## Credits
 
-Thanks for [VCluds Weather Icons©](http://vclouds.deviantart.com/gallery/#/d2ynulp)
+Thanks for [VClouds Weather Icons©](http://vclouds.deviantart.com/gallery/#/d2ynulp)
 
 ## To Do
 

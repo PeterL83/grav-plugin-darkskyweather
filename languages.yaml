@@ -11,7 +11,8 @@ en:
     WINDDIRECTION: ['N','NNE','NE','ENE','E','ESE','SE','SSE','S','SSW','SW','WSW','W','WNW','NW','NNW']
   WIDGET_CONFIG:
     CAPTION: Caption of widget header
-    REFRESHTIME: Weather refresh time (minutes)
+    REFRESHTIME: Weather refresh time
+    REFRESHTIME_APPEND: minutes
     CAPTIONDEF: Weather
     APP_TEMP: Apparent temperature
     HUMIDITY: Humidity
@@ -37,7 +38,8 @@ sk:
     WINDDIRECTION: ['S','SSV','SV','VSV','V','VJV','JV','JJV','J','JJZ','JZ','ZJZ','Z','ZSZ','SZ','SSZ']
   WIDGET_CONFIG:
     CAPTION: Nadpis hlavičky miniaplikácie
-    REFRESHTIME: Čas obnovy počasia (v minútach)
+    REFRESHTIME: Čas obnovy počasia
+    REFRESHTIME_APPEND: minút
     CAPTIONDEF: Počasie
     APP_TEMP: Pocitová teplota
     HUMIDITY: Vlhkosť

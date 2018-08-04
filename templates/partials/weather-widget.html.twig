@@ -1,6 +1,6 @@
 {% set caption = config.get('plugins.darkskyweather.caption') %}
-<h1>{{ (caption) ? caption : "WIDGET_CONFIG.CAPTIONDEF"|t }}</h1>
-<div id="ds-box" class="widgetbox hidden">
+<h1 class="basetheme radius">{{ (caption) ? caption : "WIDGET_CONFIG.CAPTIONDEF"|t }}</h1>
+<div id="ds-box" class="widgetbox hidden shadow">
 	<div id="ds-today">
 		<time id="ds-time" class="center" datetime="{{ 'now'|date('Y-m-d') }}">Dnes je </time>
 		<p id="ds-summary" class="bold center"></p>

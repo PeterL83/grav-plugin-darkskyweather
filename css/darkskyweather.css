@@ -1,9 +1,32 @@
+.basetheme {
+	background: #4d6fb8;
+	color: #000;
+}
+
+.shadow {
+	box-shadow: 0 0 3px #c1c1c1;
+	/* pridať pre ďalšie prehliadače */
+}
+
+.radius {
+	border-radius: 4px;
+	/* pridať pre ďalšie prehliadače */
+}
+
+.basecolor {
+	color: #606d6e;
+}
+
 .bold {
 	font-weight: bold;
 }
 
 .center {
 	text-align: center;
+}
+
+.hidden {
+	display: none;
 }
 
 #ds-box {
@@ -92,14 +115,14 @@ ul#ds-fpdays {
 }
 
 #ds-fpdays li {
-	display: inline-block;
-	padding: 0.7em 0.8em;
-	margin: 0.7em 0;
-	letter-spacing: normal;
-	border-right: 1px solid #eaeaea;
-	border-left: 1px solid #fff;
-	font-size: 0.8em;
-	max-width: 95px;
+    display: inline-block;
+    padding: 0.7em 0.65em;
+    margin: 0.7em 0;
+    letter-spacing: normal;
+    border-right: 1px solid #eaeaea;
+    border-left: 1px solid #fff;
+    font-size: 0.78em;
+    max-width: 95px;
 }
 
 #ds-fpdays li:first-child {

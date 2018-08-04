@@ -1,8 +1,8 @@
 /**
- * @abstract JavaScript Wrapper for the Forecast.io API using JSONP !!!!!!!!!!!!!!!!!!!!!
- * @link !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+ * @abstract JavaScript Wrapper for the DarkSky.net (Forecast.io) API using JSONP without PHP proxy
+ * @link https://github.com/PeterL83/grav-plugin-darkskyweather
  * @author Peter Luptak <luptakinfo@gmail.com>
- * @license MIT Lilcense
+ * @license MIT License
  * @copyright Copyright (C) 2018, Peter Luptak
  */
 
@@ -163,7 +163,7 @@ function Forecast() {
 			weat.then(data => $("#ds-fpicon"+i).attr('title',(data.daily.data[i].summary)));
 			weat.then(data => $("#ds-fptemp"+i).append(data.daily.data[i].temperatureLow.toFixed(0) + "&deg;C - " + data.daily.data[i].temperatureHigh.toFixed(0) + "&deg;C"));
 			weat.then(data => $("#ds-fphumidity"+i).append((data.daily.data[i].humidity*100).toFixed(0) + "%"));
-			weat.then(data => $("#ds-fpwind"+i).append((data.daily.data[i].windSpeed/0.278).toFixed(0) + " km/h " + this.windBearing(data.currently.windBearing)));
+			weat.then(data => $("#ds-fpwind"+i).append((data.daily.data[i].windSpeed/0.278).toFixed(0) + " km/h<br>" + this.windBearing(data.daily.data[i].windBearing)));
 			weat.then(data => $("#ds-fpsun"+i).append("&#x25b2; " + this.formDate(data.daily.data[i].sunriseTime,3) + " &#x25bc; " + this.formDate(data.daily.data[i].sunsetTime,3)));
 		}
 

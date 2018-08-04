@@ -1,15 +1,15 @@
 name: DarkSky Weather
-version: 0.1.0
+version: 0.1.1
 description: Weather based on DarkSky.net (Forecast.io)
 icon: plug
 author:
   name: Peter Ľupták
   email: luptakinfo@gmail.com
-homepage: https://github.com/PeterL83/darkskyweather
+homepage: https://github.com/PeterL83/grav-plugin-darkskyweather
 demo:
 keywords: grav, plugin, etc, darksky, forecast, weather
-bugs: https://github.com/PeterL83/darkskyweather/issues
-docs: https://github.com/PeterL83/darkskyweather/blob/develop/README.md
+bugs: https://github.com/PeterL83/grav-plugin-darkskyweather/issues
+docs: https://github.com/PeterL83/grav-plugin-darkskyweather/blob/master/README.md
 license: MIT
 
 form:
@@ -50,21 +50,34 @@ form:
 
     api_key:
       type: text
+      size: large
       label: WEATHER_CONFIG.API_KEY
       help: WEATHER_CONFIG.API_KEYDESC
 
     latitude:
       type: text
+      size: small
       label: WEATHER_CONFIG.LATITUDE
+      validate:
+        type: number
 
     longitude:
       type: text
+      size: small
       label: WEATHER_CONFIG.LONGITUDE
+      validate:
+        type: number
 
     caption:
       type: text
+      size: medium
       label: WIDGET_CONFIG.CAPTION
 
     refreshtime:
       type: text
+      size: x-small
       label: WIDGET_CONFIG.REFRESHTIME
+      append: WIDGET_CONFIG.REFRESHTIME_APPEND
+      validate:
+        type: number
+

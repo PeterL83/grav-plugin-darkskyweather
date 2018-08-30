@@ -31,6 +31,7 @@ If you use the admin plugin, you can install directly through the admin plugin b
 ## Requirements
 
 - API key from [DarkSky](https://darksky.net) ([forecast.io](https://forecast.io))
+- jQuery library
 
 ## Configuration
 

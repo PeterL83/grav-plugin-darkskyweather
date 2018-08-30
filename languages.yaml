@@ -14,7 +14,7 @@ en:
     REFRESHTIME: Weather refresh time
     REFRESHTIME_APPEND: minutes
     CAPTIONDEF: Weather
-    APP_TEMP: Apparent temperature
+    APP_TEMP: Apparent Temp
     HUMIDITY: Humidity
     WIND: Wind
     WINDSPEED: Wind speed
@@ -24,6 +24,7 @@ en:
     SUNSITE: Sunsite
     UVINDEX: UV Index
   DATAFROM: Data from
+  TODAY_IS: Today is
 
 sk:
   PLUGIN_CONFIG:
@@ -51,5 +52,6 @@ sk:
     SUNSITE: Západ slnka
     UVINDEX: UV index
   DATAFROM: Údaje z
+  TODAY_IS: Dnes je
 
 

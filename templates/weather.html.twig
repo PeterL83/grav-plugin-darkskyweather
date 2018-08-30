@@ -4,7 +4,7 @@
 <article>
 	<h1>{{ page.title }}</h1>
 	<div id="ds-fptoday">
-		<time id="ds-fptime" datetime="{{ 'now'|date('Y-m-d') }}">Dnes je </time>
+		<time id="ds-fptime" datetime="{{ 'now'|date('Y-m-d') }}">{{ "TODAY_IS"|t }} </time>
 		<p id="ds-fpsummary" class="bold"></p>
 		<img id="ds-fpicon" class="left" data-src="{{ url('plugin://darkskyweather/assets/vclouds') }}/" src="" alt="">
 		<p id="ds-fpcurrtemp"></p>

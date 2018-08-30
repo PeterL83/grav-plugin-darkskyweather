@@ -1,3 +1,8 @@
+# v0.1.2
+##  08/30/2018
+1. [](#bugfix)
+    * Fix templates and language labels
+
 # v0.1.1
 ##  08/04/2018
 
